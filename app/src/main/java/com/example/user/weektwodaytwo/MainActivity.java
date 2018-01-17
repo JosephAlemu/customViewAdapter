@@ -66,6 +66,13 @@ public class MainActivity extends AppCompatActivity {
 
                     break;
 
+                    case "Amphibians" :
+                        intent =   new Intent(getApplicationContext(),AmphibiansActivity.class);
+                        startActivity(intent);
+
+
+                        break;
+
 
 
 
