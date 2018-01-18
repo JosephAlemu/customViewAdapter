@@ -10,19 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".MammalsActivity" android:parentActivityName=".MainActivity" />
+        <activity android:name=".BirdsActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".FishesActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ReptilesActivity" android:parentActivityName=".MainActivity" />
+        <activity android:name=".AmphibiansActivity" android:parentActivityName=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AnimalList_Activity" />
-        <activity android:name=".MammalsActivity" />
-        <activity android:name=".BirdsActivity" />
-        <activity android:name=".FishesActivity" />
-        <activity android:name=".ReptilesActivity" />
-        <activity android:name=".AmphibiansActivity" />
-        <activity android:name=".InvertebratesActivity"></activity>
+        <activity android:name=".InvertebratesActivity" android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

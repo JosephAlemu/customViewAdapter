@@ -4,6 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+
+    android:descendantFocusability="blocksDescendants"
     android:padding="10dp"
     android:weightSum="4"
     android:background="#FFA500"
@@ -18,7 +20,7 @@
         android:weightSum="2">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/ivAnimal"
             android:layout_width="177dp"
             android:layout_height="wrap_content"
 
@@ -33,10 +35,10 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView"
+    <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        app:srcCompat="@drawable/pause_circle" />
+        app:srcCompat="@drawable/play_circle" />
 </LinearLayout>

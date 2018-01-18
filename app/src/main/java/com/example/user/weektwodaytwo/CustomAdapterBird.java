@@ -11,21 +11,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-
 import com.example.user.weektwodaytwo.model.Animals;
 
-import java.security.PrivateKey;
 import java.util.ArrayList;
 
 /**
  * Created by user on 1/12/2018.
  */
 
-public class CustomAdapter extends ArrayAdapter<Animals> {
+public class CustomAdapterBird extends ArrayAdapter<Animals> {
 
 
     private ImageButton imageButton;
@@ -34,7 +31,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
 
     boolean play=true;
 
-    public CustomAdapter(Context context, ArrayList<Animals> data) {
+    public CustomAdapterBird(Context context, ArrayList<Animals> data) {
         super(context, R.layout.row_item_lite, data);
 
     }
@@ -49,7 +46,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
 
         Animals singleAnimal = getItem(position);
 
-        if (Integer.parseInt(singleAnimal.getWeight()) >= 20) {
+        if (Integer.parseInt(singleAnimal.getWeight()) >= 5) {
 
             customView.setBackgroundColor(Color.BLUE);
 
@@ -88,7 +85,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
                     }
 
                 } else if (position == 1) {
-                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.lion);
+                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.bird);
                     if (play == true) {
                         imageButton.setImageResource(R.drawable.play_circle);
                         mediaPlayer.pause();
@@ -105,7 +102,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
 
 
                 } else if (position == 2) {
-                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.elephant);
+                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.bird);
 
                     if (play == true) {
                         imageButton.setImageResource(R.drawable.play_circle);
@@ -121,7 +118,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
                     }
 
                 } else if (position == 3) {
-                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.lion);
+                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.bird);
 
                     if (play == true) {
                         imageButton.setImageResource(R.drawable.play_circle);
@@ -138,7 +135,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
                     }
 
                 } else if (position == 4) {
-                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.cat);
+                    mediaPlayer = MediaPlayer.create(getContext(),R.raw.bird);
 
                     if (play == true) {
                         imageButton.setImageResource(R.drawable.play_circle);
@@ -154,7 +151,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
                     }
 
                 } else if (position == 5) {
-                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.elephant);
+                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.bird);
                     if (play == true) {
                         imageButton.setImageResource(R.drawable.play_circle);
                         mediaPlayer.pause();
@@ -169,7 +166,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
                     }
 
                 } else if (position == 6) {
-                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.lion);
+                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.bird);
                     if (play == true) {
                         imageButton.setImageResource(R.drawable.play_circle);
                         mediaPlayer.pause();
@@ -184,7 +181,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
                     }
 
                 } else if (position == 7) {
-                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.lion);
+                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.bird);
                     if (play == true) {
                         imageButton.setImageResource(R.drawable.play_circle);
                         mediaPlayer.pause();
@@ -199,7 +196,7 @@ public class CustomAdapter extends ArrayAdapter<Animals> {
                     }
 
                 } else if (position == 8) {
-                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.lion);
+                    mediaPlayer = MediaPlayer.create(getContext(), R.raw.bird);
 
                     if (play == true) {
                         imageButton.setImageResource(R.drawable.play_circle);

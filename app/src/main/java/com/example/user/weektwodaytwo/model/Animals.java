@@ -1,5 +1,6 @@
 package com.example.user.weektwodaytwo.model;
 
+
 /**
  * Created by user on 1/16/2018.
  */
@@ -50,3 +51,6 @@ public class Animals {
                 '}';
     }
 }
+
+
+
